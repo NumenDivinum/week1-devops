@@ -11,6 +11,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    permissions: write-all
 
     steps:
       - name: Check out repo code
@@ -37,4 +38,3 @@ jobs:
         with:
           pytest-xml-coverage-path: ./coverage.xml
 
-          
